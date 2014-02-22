@@ -6,7 +6,7 @@ Table of nodes and weights upto 256th order for the Gauss-Chebyshev quadrature o
 
 The nodes are found inside the folder named 'nodes' and the weights are found in the folder named 'weights'.
 
-For instance, the file 'nodes10' contains the Gauss Legendre nodes of order 10 and the file 'weights10' contains the corresponding weights. All the digits in these files are accurate.
+For instance, the file 'nodes10' contains the Gauss Chebyshev nodes of second kind of order 10 and the file 'weights10' contains the corresponding weights. All the digits in these files are accurate.
 
 C++ header files are also provided to obtain these values as an array of long double. There are two ways to obtain these values.
 
@@ -20,7 +20,7 @@ This gives access to all orders from '1' to '256'. This takes slightly longer to
     
     **Gauss_Chebyshev_Second_Kind_Nodes_and_Weights(N, nodes, weight);**
 
-where 'N' is the order of the Gauss Legendre quadrature, 'nodes' is a long double array with the nodes and 'weight' is a long double array with the respective weights.
+where 'N' is the order of the Gauss Chebyshev quadrature of second kind, 'nodes' is a long double array with the nodes and 'weight' is a long double array with the respective weights.
 
 
 ###Second method:###
