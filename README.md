@@ -1,4 +1,4 @@
 Quadrature
 ==========
 
-Collection of one dimensional quadratures
+Collection of one dimensional quadratures.

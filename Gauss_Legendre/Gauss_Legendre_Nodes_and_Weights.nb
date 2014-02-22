@@ -1,0 +1,106 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      3279,         97]
+NotebookOptionsPosition[      3026,         83]
+NotebookOutlinePosition[      3380,         99]
+CellTagsIndexPosition[      3337,         96]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"precision", "=", "128"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Nmin", " ", "=", " ", "1"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Nmax", " ", "=", " ", "128"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Do", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"sol", " ", "=", " ", 
+     RowBox[{"N", "[", 
+      RowBox[{
+       RowBox[{"Solve", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"LegendreP", "[", 
+           RowBox[{"n", ",", "x"}], "]"}], "\[Equal]", "0"}], ",", "x"}], 
+        "]"}], ",", "precision"}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"nodes", " ", "=", " ", 
+     RowBox[{"Re", "[", 
+      RowBox[{"sol", "[", 
+       RowBox[{"[", 
+        RowBox[{"All", ",", " ", "1", ",", " ", "2"}], "]"}], "]"}], "]"}]}], 
+    ";", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"LP", "[", "x_", "]"}], "=", " ", 
+     RowBox[{"D", "[", 
+      RowBox[{
+       RowBox[{"LegendreP", "[", 
+        RowBox[{"n", ",", "x"}], "]"}], ",", "x"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"weights", " ", "=", " ", 
+     RowBox[{"N", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"2", "/", 
+          RowBox[{"(", 
+           RowBox[{"1", "-", 
+            RowBox[{"nodes", "*", "nodes"}]}], ")"}]}], "/", 
+         RowBox[{"LP", "[", "nodes", "]"}]}], "/", 
+        RowBox[{"LP", "[", "nodes", "]"}]}], ",", " ", "precision"}], "]"}]}],
+     ";", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{"\"\<./nodes\>\"", "<>", 
+       RowBox[{"ToString", "[", "n", "]"}]}], ",", "nodes", ",", 
+      "\"\<List\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{"\"\<./weights\>\"", "<>", 
+       RowBox[{"ToString", "[", "n", "]"}]}], ",", "weights", ",", 
+      "\"\<List\>\""}], "]"}], ";"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"n", ",", "Nmin", ",", "Nmax"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.60200224960183*^9, 3.602002256227611*^9}, 
+   3.6020027540917892`*^9, {3.602003013378826*^9, 3.602003013929433*^9}, {
+   3.602003168491435*^9, 3.602003274347412*^9}, {3.602003362506974*^9, 
+   3.602003363804534*^9}, {3.602003415554821*^9, 3.602003416478451*^9}, {
+   3.602004164770088*^9, 3.602004169095059*^9}, {3.602004215497271*^9, 
+   3.602004294099141*^9}, {3.602004858846726*^9, 3.602004861678877*^9}}]
+},
+WindowSize->{723, 852},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (January 25, \
+2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 2465, 61, 199, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
