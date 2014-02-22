@@ -10,10 +10,10 @@ C++ header files are also provided to obtain these values as an array of long do
 
 ###First method:###
 
-    1. Include the header file "./header/Gauss_Legendre_Nodes_and_Weights.hpp"
+1. Include the header file "./header/Gauss\_Legendre\_Nodes\_and\_Weights.hpp"
     
-    2. Nodes and weights of any order can be obtained using the following command:
+2. Nodes and weights of any order can be obtained using the following command:
     
-      			**Gauss_Legendre_Nodes_and_Weights(N, nodes, weights);**
+**Gauss_Legendre_Nodes_and_Weights(N, nodes, weights);**
 
-    where 'N' is the order of the Gauss Legendre quadrature, 'nodes' is a long double array with the nodes and 'weights' is the a long double array with the respective weights.
+where 'N' is the order of the Gauss Legendre quadrature, 'nodes' is a long double array with the nodes and 'weights' is the a long double array with the respective weights.
