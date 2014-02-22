@@ -1,6 +1,6 @@
 #Gauss Legendre Quadrature#
 
-![Quadrature](./../images/Gauss_Legendre_Quadrature.png =200x)
+![Quadrature](https://raw2.github.com/sivaramambikasaran/Quadrature/master/images/Gauss_Legendre_Quadrature.png =200x)
 
 Table of nodes and weights upto 128th order for the Gauss-Legendre quadrature. The tables are generated using mathematica to a very high precision (most of them are accurate upto more than '100' digits).
 
