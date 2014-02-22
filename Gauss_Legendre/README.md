@@ -10,7 +10,7 @@ C++ header files are also provided to obtain these values as an array of long do
 
 ###First method:###
 
-1. Include the header file "./header/Gauss\_Legendre\_Nodes\_and\_Weights.hpp"
+1. Include the header file "**./header/Gauss\_Legendre\_Nodes\_and\_Weights.hpp**"
     
 2. Nodes and weights of any order can be obtained using the following command:
     
