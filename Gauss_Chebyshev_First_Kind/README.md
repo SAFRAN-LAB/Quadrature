@@ -18,7 +18,7 @@ This gives access to all orders from '1' to '256'. This takes slightly longer to
     
 2. Nodes and weights of any order can be obtained using the following command:
     
-    **Gauss_Legendre_Nodes_and_Weights(N, nodes, weight);**
+    **Gauss_Chebyshev_First_Kind_Nodes_and_Weights(N, nodes, weight);**
 
 where 'N' is the order of the Gauss Legendre quadrature, 'nodes' is a long double array with the nodes and 'weight' is a long double with the respective weight.
 
@@ -31,6 +31,6 @@ If we *a-priori* know the order we want to use, i.e., say order '16', then proce
     
 2. Nodes and weights of order '16' can be obtained using the following command:
     
-    **Gauss_Legendre_Nodes_and_Weights_16(nodes, weight);**
+    **Gauss_Chebyshev_First_Kind_Nodes_and_Weights_16(nodes, weight);**
 
 where 'nodes' is a long double array with the nodes and 'weight' is a long double with the respective weight.
