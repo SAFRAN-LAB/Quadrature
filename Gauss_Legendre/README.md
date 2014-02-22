@@ -20,7 +20,7 @@ This gives access to all orders from '1' to '128'. This takes slightly longer to
     
     **Gauss_Legendre_Nodes_and_Weights(N, nodes, weights);**
 
-where 'N' is the order of the Gauss Legendre quadrature, 'nodes' is a long double array with the nodes and 'weights' is the a long double array with the respective weights.
+where 'N' is the order of the Gauss Legendre quadrature, 'nodes' is a long double array with the nodes and 'weights' is a long double array with the respective weights.
 
 
 ###Second method:###
@@ -33,4 +33,4 @@ If we *a-priori* know the order we want to use, i.e., say order '16', then proce
     
     **Gauss_Legendre_Nodes_and_Weights_16(nodes, weights);**
 
-where 'nodes' is a long double array with the nodes and 'weights' is the a long double array with the respective weights.
+where 'nodes' is a long double array with the nodes and 'weights' is a long double array with the respective weights.

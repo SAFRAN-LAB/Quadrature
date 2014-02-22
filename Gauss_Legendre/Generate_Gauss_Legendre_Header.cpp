@@ -77,8 +77,11 @@ void generate_File(int n) {
                 myhppfile << "\tnodes[" << k << "] \t= " << nodes << ";" << endl;
                 myhppfile << "\tweights[" << k << "] \t= " << weights << ";" << endl << endl;
         }
+        mynodesFile.close();
+        myweightsFile.close();
         myhppfile << "}" << endl;
         myhppfile << "#endif /*(__Gauss_Legendre_Nodes_and_Weights_" << n << "_hpp__)*/";
+        myhppfile.close();
 }
 
 //      Generates a single file for different number of nodes.
@@ -142,6 +145,7 @@ void generate_Main_File(int N) {
         myhppfile << "\t}" << endl;
         myhppfile << "}" << endl;
         myhppfile << "#endif /*(__Gauss_Legendre_Nodes_and_Weights_hpp__)*/";
+        myhppfile.close();
 }
 
 int main(int argc, char* argv[]) {
