@@ -1,4 +1,4 @@
-#Gauss Legendre Quadrature#
+#Gauss Chebyshev First Kind Quadrature#
 
 ![Quadrature](https://raw2.github.com/sivaramambikasaran/Quadrature/master/images/Gauss_Chebyshev_First_Kind.png)
 
