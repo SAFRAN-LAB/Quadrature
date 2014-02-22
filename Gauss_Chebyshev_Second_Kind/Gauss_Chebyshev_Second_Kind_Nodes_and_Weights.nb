@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[      3343,        101]
-NotebookOptionsPosition[      3090,         87]
-NotebookOutlinePosition[      3444,        103]
-CellTagsIndexPosition[      3401,        100]
+NotebookDataLength[      3447,        101]
+NotebookOptionsPosition[      3193,         87]
+NotebookOutlinePosition[      3548,        103]
+CellTagsIndexPosition[      3505,        100]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -25,42 +25,41 @@ Cell[BoxData[{
   RowBox[{"Nmin", "=", "1"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"Nmax", "=", "256"}], ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"PI", "=", 
-   RowBox[{"N", "[", 
-    RowBox[{"\[Pi]", ",", "precision"}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
  RowBox[{"Do", "[", "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
+    RowBox[{"temp", "=", 
+     RowBox[{"N", "[", 
+      RowBox[{
+       RowBox[{"\[Pi]", "/", 
+        RowBox[{"(", 
+         RowBox[{"n", "+", "1"}], ")"}]}], ",", "precision"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
     RowBox[{"nodes", "=", 
      RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", 
     RowBox[{"weights", "=", 
-     RowBox[{"N", "[", 
-      RowBox[{
-       RowBox[{"PI", "/", 
-        RowBox[{"N", "[", 
-         RowBox[{"n", ",", "precision"}], "]"}]}], ",", "precision"}], 
-      "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", 
     RowBox[{"Do", "[", "\[IndentingNewLine]", 
      RowBox[{
       RowBox[{
-       RowBox[{"temp", "=", 
-        RowBox[{"N", "[", 
-         RowBox[{
-          RowBox[{
-           RowBox[{"(", 
-            RowBox[{
-             RowBox[{"2", "*", "i"}], "-", "1"}], ")"}], "*", 
-           RowBox[{"weights", "/", "2"}]}], ",", "precision"}], "]"}]}], ";", 
-       "\[IndentingNewLine]", 
        RowBox[{"node", "=", 
         RowBox[{"N", "[", 
          RowBox[{
-          RowBox[{"Cos", "[", "temp", "]"}], ",", "precision"}], "]"}]}], ";",
-        "\[IndentingNewLine]", 
+          RowBox[{"Cos", "[", 
+           RowBox[{"i", "*", "temp"}], "]"}], ",", "precision"}], "]"}]}], 
+       ";", "\[IndentingNewLine]", 
+       RowBox[{"weight", "=", 
+        RowBox[{"N", "[", 
+         RowBox[{
+          RowBox[{"temp", "*", 
+           SuperscriptBox[
+            RowBox[{"Sin", "[", 
+             RowBox[{"i", "*", "temp"}], "]"}], "2"]}], ",", "precision"}], 
+         "]"}]}], ";", "\[IndentingNewLine]", 
        RowBox[{"AppendTo", "[", 
-        RowBox[{"nodes", ",", "node"}], "]"}], ";"}], ",", 
+        RowBox[{"nodes", ",", "node"}], "]"}], ";", "\[IndentingNewLine]", 
+       RowBox[{"AppendTo", "[", 
+        RowBox[{"weights", ",", "weight"}], "]"}]}], ",", 
       "\[IndentingNewLine]", 
       RowBox[{"{", 
        RowBox[{"i", ",", "1", ",", "n"}], "}"}]}], "]"}], ";", 
@@ -83,9 +82,10 @@ Cell[BoxData[{
   3.602033303685375*^9}, {3.602033421854908*^9, 3.6020334719346247`*^9}, {
   3.6020335265196342`*^9, 3.602033577812162*^9}, {3.602033668249714*^9, 
   3.602033701269661*^9}, {3.6020337989973516`*^9, 3.602033820983677*^9}, {
-  3.6020338898368998`*^9, 3.6020338904786882`*^9}}]
+  3.6020338898368998`*^9, 3.6020338904786882`*^9}, {3.6020378544153357`*^9, 
+  3.602037977596336*^9}}]
 },
-WindowSize->{723, 852},
+WindowSize->{1436, 515},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
 FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (January 25, \
 2013)",
@@ -102,7 +102,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[557, 20, 2529, 65, 284, "Input"]
+Cell[557, 20, 2632, 65, 324, "Input"]
 }
 ]
 *)
