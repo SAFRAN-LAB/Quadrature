@@ -14,6 +14,6 @@ C++ header files are also provided to obtain these values as an array of long do
     
 2. Nodes and weights of any order can be obtained using the following command:
     
-**Gauss_Legendre_Nodes_and_Weights(N, nodes, weights);**
+     **Gauss_Legendre_Nodes_and_Weights(N, nodes, weights);**
 
 where 'N' is the order of the Gauss Legendre quadrature, 'nodes' is a long double array with the nodes and 'weights' is the a long double array with the respective weights.
