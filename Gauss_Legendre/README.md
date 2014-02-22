@@ -1,6 +1,6 @@
 #Gauss Legendre#
 
-Table of nodes and weights upto 128th order for the Gauss-Legendre quadrature. The tables are generated using mathematica to a very high precision (most of them are accurate upto 100 digits).
+Table of nodes and weights upto 128th order for the Gauss-Legendre quadrature. The tables are generated using mathematica to a very high precision (most of them are accurate upto more than '100' digits).
 
 The nodes are found inside the folder named 'nodes' and the weights are found in the folder named 'weights'.
 
