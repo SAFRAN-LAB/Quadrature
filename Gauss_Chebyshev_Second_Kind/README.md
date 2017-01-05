@@ -1,6 +1,6 @@
 #Gauss Chebyshev Second Kind Quadrature#
 
-![Quadrature](https://raw2.github.com/sivaramambikasaran/Quadrature/master/images/Gauss_Chebyshev_Second_Kind.png)
+![Quadrature](https://github.com/sivaramambikasaran/Quadrature/blob/master/images/Gauss_Chebyshev_Second_Kind.png)
 
 Table of nodes and weights upto 256th order for the Gauss-Chebyshev quadrature of second kind. The tables are generated using mathematica to a very high precision (most of them are accurate upto more than '125' digits).
 
