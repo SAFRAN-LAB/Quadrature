@@ -1,6 +1,6 @@
 #Gauss Laguerre Quadrature#
 
-![Quadrature](https://raw2.github.com/sivaramambikasaran/Quadrature/master/images/Gauss_Laguerre.png)
+![Quadrature](https://github.com/sivaramambikasaran/Quadrature/blob/master/images/Gauss_Laguerre.png)
 
 Table of nodes and weights upto 256th order for the Gauss-Laguerre quadrature. The tables are generated using mathematica to a very high precision (most of them are accurate upto more than '100' digits).
 
